@@ -1,0 +1,1 @@
+# OpenCV-CMake-MinGW-Sample
