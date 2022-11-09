@@ -11,7 +11,7 @@ Build:
 
   Powershell: 
   ```
-  g++ main.cc -o main (-split (pkg-config --cflags --libs opencv4)
-  )```
+  g++ main.cc -o main (-split (pkg-config --cflags --libs opencv4))
+  ```
 
-Run:```build/main.exe``
+Run: ```build/main.exe``
