@@ -6,12 +6,12 @@ Build:
 
 * MSYS2 Shell: 
 ```
-g++ main.cc -o build/main `pkg-config --cflags --libs opencv4`
+g++ src/main.cc -o build/main `pkg-config --cflags --libs opencv4`
 ```
 
 * Powershell: 
 ```
-g++ main.cc -o main (-split (pkg-config --cflags --libs opencv4))
+g++ src/main.cc -o build/main (-split (pkg-config --cflags --libs opencv4))
 ```
 
-Run: ```build/main.exe```
+Run: ```cd build/``` then ```./main.exe```
