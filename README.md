@@ -9,7 +9,7 @@ Build:
   g++ main.cc -o build/main `pkg-config --cflags --libs opencv4`
   ```
 
-  Powershell: 
+  * Powershell: 
   ```
   g++ main.cc -o main (-split (pkg-config --cflags --libs opencv4))
   ```
