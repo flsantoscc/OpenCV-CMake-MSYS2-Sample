@@ -19,16 +19,12 @@ g++ src/main.cc -o build/main (-split (pkg-config --cflags --libs opencv4))
 cmake . -G "MinGW Makefiles"
 mingw32-make
 mv main.exe build/
-cd build
-./main.exe
 ```
 ### CMake + Ninja
 ```
 cmake .
 ninja
 mv main.exe build/
-cd build
-./main.exe
 ```
 
 Run: ```cd build/``` then ```./main.exe```
