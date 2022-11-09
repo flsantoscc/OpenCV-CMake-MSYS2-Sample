@@ -14,10 +14,18 @@ g++ src/main.cc -o build/main `pkg-config --cflags --libs opencv4`
 ```
 g++ src/main.cc -o build/main (-split (pkg-config --cflags --libs opencv4))
 ```
-### CMake
+### CMake + Make
 ```
 cmake . -G "MinGW Makefiles"
 mingw32-make
+mv main.exe build/
+cd build
+./main.exe
+```
+### CMake + Ninja
+```
+cmake .
+ninja
 mv main.exe build/
 cd build
 ./main.exe
